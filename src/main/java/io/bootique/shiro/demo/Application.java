@@ -1,7 +1,7 @@
 package io.bootique.shiro.demo;
 
+import io.bootique.BQModule;
 import io.bootique.Bootique;
-import io.bootique.di.BQModule;
 import io.bootique.di.Binder;
 import io.bootique.jersey.JerseyModule;
 import io.bootique.shiro.demo.controller.LoginController;
