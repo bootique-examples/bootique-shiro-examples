@@ -36,13 +36,3 @@ java -jar target/bootique-shiro-examples-4.0.jar --server --config=config.yml
 
 After launching the app, go to
 
-1. `http://localhost:8080/login.jsp` check for permissions to have role 'admin', if have no permissions will redirect to `/denied` page, otherwise to public page
-2. `http://localhost:8080/pub` get public page returns hello
-3. `http://localhost:8080/login?username=username&password=password` log in the user with specified username and password.
-    There is two users:
-    * user/password - has role 'user'
-    * adminuser/password - has role 'admin'
-    After succes login you will be redirected to '/login.jsp' page. If you will specify wrong credentials you will see the 404 error.
-4.  `http://localhost:8080/logout` logges out. After logout you will see 'Logged out' message.
-5.  `http://localhost:8080/private` endpoint with configured  permissions in `bootique.yml` file.
-If you logged in with 'admin' role you will see 'admin' message otherwise you will be redirected to `/login.jsp`

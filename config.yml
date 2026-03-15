@@ -1,13 +1,10 @@
-
 shiro:
   realms:
     - users:
-        adminuser: "password, admin, user"
-        user: "password, user"
-      roles:
-        admin: "admin"
+        user1: "password, user"
+        user2: "password, user, admin"
 
 shiroweb:
   urls:
-    "/private" : perms[admin]
-    "/pub"   : anon
+    "/public" : anon
+    "/private" : "noSessionCreation, authcBasic, roles[user]"

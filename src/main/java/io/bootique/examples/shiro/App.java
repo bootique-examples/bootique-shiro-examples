@@ -19,7 +19,7 @@ public class App implements BQModule {
     @Override
     public void configure(Binder binder) {
         JerseyModule.extend(binder)
-                .addResource(ShiroController.class)
-                .addResource(LoginController.class);
+                .addApiResource(PublicApi.class)
+                .addApiResource(PrivateApi.class);
     }
 }
