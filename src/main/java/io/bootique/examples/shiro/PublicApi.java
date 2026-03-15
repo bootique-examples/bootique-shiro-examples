@@ -17,6 +17,6 @@ public class PublicApi {
 
         return s.getPrincipal() != null
                 ? String.format("Hi, %s! This API is public. You are logged in as '%s'.", s.getPrincipal(), s.hasRole("admin") ? "admin" : "user")
-                : "Hi! This API is public and you are not logged in";
+                : "Hi! This API is public and you are not logged in.";
     }
 }
