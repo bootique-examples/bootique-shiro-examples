@@ -29,7 +29,7 @@ mvn clean package
 ```
 
 ## Run
-Start the server with the `-s` (`--server`) command and configuration file: 
+Start the server with the `--server` command and pass the configuration file: 
 ```bash
 java -jar target/bootique-shiro-examples-4.0.jar --server --config=config.yml
 ```
