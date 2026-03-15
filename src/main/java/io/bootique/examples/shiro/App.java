@@ -12,7 +12,6 @@ public class App implements BQModule {
                 .app(args)
                 .autoLoadModules()
                 .module(App.class)
-                .args("-s", "--config=classpath:bootique.yml")
                 .exec()
                 .exit();
     }
