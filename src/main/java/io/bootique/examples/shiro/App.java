@@ -1,19 +1,17 @@
-package io.bootique.shiro.demo;
+package io.bootique.examples.shiro;
 
 import io.bootique.BQModule;
 import io.bootique.Bootique;
 import io.bootique.di.Binder;
 import io.bootique.jersey.JerseyModule;
-import io.bootique.shiro.demo.controller.LoginController;
-import io.bootique.shiro.demo.controller.ShiroController;
 
-public class Application implements BQModule {
+public class App implements BQModule {
 
     public static void main(String[] args) {
         Bootique
                 .app(args)
                 .autoLoadModules()
-                .module(Application.class)
+                .module(App.class)
                 .args("-s", "--config=classpath:bootique.yml")
                 .exec()
                 .exit();

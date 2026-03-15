@@ -1,4 +1,4 @@
-package io.bootique.shiro.demo.controller;
+package io.bootique.examples.shiro;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;

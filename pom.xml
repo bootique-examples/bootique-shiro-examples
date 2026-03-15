@@ -13,7 +13,7 @@
         <maven.compiler.release>21</maven.compiler.release>
 
         <bootique.version>4.0-M3</bootique.version>
-        <main.class>io.bootique.shiro.demo.Application</main.class>
+        <main.class>io.bootique.examples.shiro.App</main.class>
     </properties>
 
     <dependencyManagement>
