@@ -34,12 +34,11 @@ Start the server with the `-s` (`--server`) command and configuration file:
 java -jar target/bootique-shiro-examples-4.0.jar --server --config=config.yml
 ```
 
-First, go to http://localhost:8080/public in the browser. You should see the text "Hi! This API is public, and you are 
-not logged in."
+First, go to http://localhost:8080/public in the browser. You should see the text `Hi! This API is public, and you are 
+not logged in.`
 
 Now go to http://localhost:8080/private . You should see a login prompt. Enter `user1` / `password` as credentials, and 
-then the following response should appear: "Hi, user1! This API is protected. You are logged in as 'user'."
+then the following response should appear: `Hi, user1! This API is protected. You are logged in as 'user'.`
 
 Finally, open new private browser window and go to the same URL (http://localhost:8080/private) but login as `user2` / 
-`password`. The following response should appear: "Hi, user2! This API is protected. You are logged in as 'admin'."
-
+`password`. The following response should appear: `Hi, user2! This API is protected. You are logged in as 'admin'.`
